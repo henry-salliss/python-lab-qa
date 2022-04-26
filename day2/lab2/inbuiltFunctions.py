@@ -17,4 +17,4 @@ print(average)
 mean = round(statistics.mean(grades),2)
 print(mean)
 
-print('the max is {} the min is {} the average is {}'.format(minimum, maximum, average))
+print('the min is {} the max is {} the average is {}'.format(minimum, maximum, average))
