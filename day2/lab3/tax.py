@@ -1,11 +1,14 @@
 def getIncomeTax(income):
+    taxable_income = income - 13500
     tax = 0
-    if(income > 0 and income <= 34500):
-        tax = income * 0.2
-    elif(income > 34500 and income <= 150000):
-        tax = income * 0.4
-    elif(income > 150000):
-        tax = income * 0.45
+    if(taxable_income < 0):
+        tax = 0
+    elif(taxable_income > 0 and taxable_income <= 34500):
+        tax = taxable_income * 0.2
+    elif(taxable_income > 34500 and taxable_income <= 150000):
+        tax = taxable_income * 0.4
+    elif(taxable_income > 150000):
+        tax = taxable_income * 0.45
 
     return tax
     
